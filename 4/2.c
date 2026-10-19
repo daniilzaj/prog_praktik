@@ -8,9 +8,8 @@ int main(void) {
     scanf("%hu %hu", &d1, &d2);
     res = (float)d1 * d2 / 2;
     printf("RESULT: %.2f\n", res);
-    printf("SIZE_D1: %llu\n", (unsigned long long)sizeof(d1));
-    printf("SIZE_D2: %llu\n", (unsigned long long)sizeof(d2));
-    printf("SIZE_RESULT: %llu\n", (unsigned long long)sizeof(res));
+    printf("SIZE_UINT16: %llu\n", (unsigned long long)sizeof(uint16_t));
+    printf("SIZE_FLOAT: %llu\n", (unsigned long long)sizeof(float));
 
     return 0;
 }
