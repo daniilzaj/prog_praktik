@@ -2,14 +2,14 @@
 #include <stdint.h>
 
 int main(void) {
-    uint16_t f, d;
+    uint16_t d1, d2;
     float res;
 
-    scanf("%hu %hu", &f, &d);
-    res = (float)f * d;
+    scanf("%hu %hu", &d1, &d2);
+    res = (float)d1 * d2 / 2;
     printf("RESULT: %.2f\n", res);
-    printf("SIZE_F: %llu\n", (unsigned long long)sizeof(f));
-    printf("SIZE_D: %llu\n", (unsigned long long)sizeof(d));
+    printf("SIZE_D1: %llu\n", (unsigned long long)sizeof(d1));
+    printf("SIZE_D2: %llu\n", (unsigned long long)sizeof(d2));
     printf("SIZE_RESULT: %llu\n", (unsigned long long)sizeof(res));
 
     return 0;

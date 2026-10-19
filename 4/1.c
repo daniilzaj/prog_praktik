@@ -6,7 +6,7 @@ int main(void) {
     int p;
 
     while (scanf("%d", &p) == 1 && p > 0) {
-        printf("%d MW %d kW\n", p / K, p % K);
+        printf("%d kJ %d J\n", p / K, p % K);
     }
 
     return 0;

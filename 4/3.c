@@ -2,15 +2,17 @@
 
 int main(void) {
     int n, i = 0;
-    unsigned long long v = 1;
+    unsigned long long a = 0, b = 1, c;
 
     scanf("%d", &n);
     while (i < n) {
-        printf("%llu", v);
+        printf("%llu", a);
         if (i < n - 1) {
             printf(" ");
         }
-        v *= 1000;
+        c = a + b;
+        a = b;
+        b = c;
         i++;
     }
     printf("\n");

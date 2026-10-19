@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-double km_to_mi(double x) {
-    const double K = 1.609;
+double bit_to_byte(double x) {
+    const double K = 8;
 
     return x / K;
 }
@@ -10,7 +10,7 @@ int main(void) {
     double x;
 
     while (scanf("%lf", &x) == 1) {
-        printf("MILES: %.2f\n", km_to_mi(x));
+        printf("BYTES: %.2f\n", bit_to_byte(x));
     }
 
     return 0;
