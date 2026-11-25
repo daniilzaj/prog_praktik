@@ -36,8 +36,8 @@ int main(void) {
     long long s[MAXR];
     char op;
 
+    menu();
     while (1) {
-        menu();
         printf("OP: ");
         if (scanf(" %c", &op) != 1) {
             break;
